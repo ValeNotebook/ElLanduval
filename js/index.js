@@ -107,9 +107,9 @@ const recargarTabla=()=>{
       }else if (pedido.tipo_pedido=="almuerzo"){
           tdTipoPedido.innerText="Almuerzo";
       }else if (pedido.tipo_pedido=="once"){
-        tdTipoPedido.innerText=="Once";
+        tdTipoPedido.innerText="Once";
       }else{
-        tdTipoPedido.innerText=="Cena";
+        tdTipoPedido.innerText="Cena";
       }
 
 
