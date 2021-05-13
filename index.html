@@ -1,0 +1,211 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link rel="stylesheet" href="vendor/fontawesome-free-5.15.3-web/css/all.min.css">
+
+    <title>Restaurant Landuval</title>
+
+    <style type="text/css">
+
+        body,h1,h2,h3,h4,h5,h6,button{
+          margin: 5px;
+        }
+
+        body{
+          background: #d1d9d9;
+
+        }
+        header{
+            background: #94d0cc;
+
+        }
+
+         #titulo{
+             font-family: 'Times New Roman', Times, serif;
+             text-align: center;
+             background:#eec4c4;
+         }      
+
+
+         #Menu{
+                background: #94d0cc;
+                font-family: 'Times New Roman', Times, serif;
+
+         }
+
+         #separacion{
+             background: #f29191;
+         }
+
+         #subtitulo{
+
+            font-family: 'Times New Roman', Times, serif;
+             text-align: center;
+             
+
+         }
+
+         #ingresar-menu{
+
+            font-family: 'Times New Roman', Times, serif;
+             text-align: center;
+             background: #d1d9d9;
+
+         }
+
+         #fondo-menu{
+             background: #f29191;
+         }
+
+         #fondo-btn-agregar{
+            background: #d1d9d9;
+
+         }
+
+
+
+
+        
+        </style>
+
+  </head>
+
+
+  <!-- Cabecera -->
+
+  <body>
+
+
+
+    <header class="bg-gradient">
+
+        <div class="row">
+
+            <div class="col-12 col-md-12 col-lg-3 id="flor">
+                <img src="imgs/rose.png" alt="" class="w-50 pt-3 mb-2">
+            </div>
+
+            <div class="col-12 col-md-12 col-lg-6" id="titulo">
+                <h1 class="pt-5 mb-3">Restaurant "El Landuval" </h1>
+            </div>
+          </div>
+        </div>
+    </header>
+
+<!-- Registrar Menu  -->
+
+    <div id="separacion">
+        <h1> </h1>
+        <h3 class="col-12 col-md-12 col-lg-12 " id="titulo" id="subtitulo" style="background: #f29191; ">Las mejores recetas, desde el huerto a tu casa.</h3>
+        <h1></h1>
+
+    </div>
+
+    <main class="container-fluid pt-5" id="Menu">
+        <div class="row">
+          <div class="col-12 col-md-6 col-lg-4">
+  
+            <div class="card mb-1">
+  
+              <div class="card-header " id="ingresar-menu">
+                <span><b>Ingresar Menu</b></span>
+              </div>
+  
+              <div class="card-body" id="fondo-menu">
+  
+              <div class="mb-3">
+                <label for="nom-cliente" class="form-label">Nombre del Cliente</label>
+                <input type="text" class="form-control" id="nom-cliente">
+             </div>
+  
+            <div class="mb-3">
+                <label for="tipo-pedido" class="form-label">Horario</label>
+                <select class="form-select" id="tipo-pedido">
+                </select>
+            </div>
+  
+  
+  
+            <div class="mb-3">
+                <label for="total-pedido" class="form-label">Valor</label>
+                <input  type="number" class="form-control" id="total-pedido" >
+  
+            </div>
+  
+            <div class="mb-3">
+                <label for="" class="form-label">Descripcion </label>
+                <textarea  id="textito"></textarea>
+             </div>
+  
+             </div>
+            </div>
+
+  
+              <div class="card-footer mb-5" id="fondo-btn-agregar">
+                <div class="text-end">
+                  <button type="button" class="btn " style="color: #f29191 ; background: #eec4c4" id="btn_agregar"><b>Agregar</b></button>
+              </div>
+              </div>
+            </div>
+
+
+            <div class="col col-md col-lg">
+              <div class="card" style="background: #eec4c4;">
+                  <div class="card-header bg-gradient " style="background: #d1d9d9;">
+                      <span><b>Pedido</b></span>
+                  </div>
+                  <div class="card-body">
+                      <table class="table table-success table-striped table-responsive ">
+                          <thead>
+                              <tr>
+                                  <th>#</th>
+                                  <th>Nombre del Cliente</th>
+                                  <th>Horario</th>
+                                  <th>Total del Pedido</th>
+                                  <th>Descripcion</th>
+                                  <th>Oferta</th>
+                              </tr>
+                          </thead>
+                          <tbody id="tb-body">
+    
+                          </tbody>
+    
+                      </table>
+    
+                  </div>
+    
+    
+              </div>
+    
+          </div>
+
+        </div>
+
+
+     
+
+
+
+
+    
+
+  
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+    <script src="vendor/tinymce/js/tinymce/tinymce.min.js"></script> 
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+    <script src="js/index.js"></script>
+
+   
+  </body>
+
+
+
+</html>
